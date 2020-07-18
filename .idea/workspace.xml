@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="373dbc31-96af-49ed-8da2-39708fbda8e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Hlavna.java" afterDir="false" />
+    <list default="true" id="373dbc31-96af-49ed-8da2-39708fbda8e9" name="Default Changelist" comment="pridanie obrázku do úvodného okna hry a taktiež vytvorenie tried(class) a vytvorenie grafického okna z tlačidlami">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bojovnik.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Hrac.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Kuzelnik.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lukostrelec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pozadieObrazok.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hra2020.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hlavna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hlavna.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +44,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Program Files (x86)\Git\app\Hra2020\src\main\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -78,8 +86,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594984287618</updated>
-      <workItem from="1594984290768" duration="1940000" />
+      <workItem from="1594984290768" duration="3418000" />
+      <workItem from="1595088379516" duration="2821000" />
     </task>
+    <task id="LOCAL-00001" summary="Upravenie suboru pom.xml a pridanie Hlavnej triedy">
+      <created>1594986757011</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594986757011</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,10 +107,17 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Upravenie suboru pom.xml a pridanie Hlavnej triedy" />
+    <MESSAGE value="pridanie obrázku do úvodného okna hry a taktiež vytvorenie tried(class) a vytvorenie grafického okna z tlačidlami" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridanie obrázku do úvodného okna hry a taktiež vytvorenie tried(class) a vytvorenie grafického okna z tlačidlami" />
   </component>
 </project>
