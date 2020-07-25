@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="373dbc31-96af-49ed-8da2-39708fbda8e9" name="Default Changelist" comment="pridanie obrázku do úvodného okna hry a taktiež vytvorenie tried(class) a vytvorenie grafického okna z tlačidlami">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bojovnik.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Hrac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Kuzelnik.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Lukostrelec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pozadieObrazok.jpg" afterDir="false" />
+    <list default="true" id="373dbc31-96af-49ed-8da2-39708fbda8e9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/MenuBojovnikaPozadie.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hlavna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hlavna.java" afterDir="false" />
     </list>
@@ -87,7 +83,9 @@
       <option name="presentableId" value="Default" />
       <updated>1594984287618</updated>
       <workItem from="1594984290768" duration="3418000" />
-      <workItem from="1595088379516" duration="2821000" />
+      <workItem from="1595088379516" duration="3348000" />
+      <workItem from="1595593912060" duration="5881000" />
+      <workItem from="1595697787697" duration="123000" />
     </task>
     <task id="LOCAL-00001" summary="Upravenie suboru pom.xml a pridanie Hlavnej triedy">
       <created>1594986757011</created>
@@ -96,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594986757011</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="pridanie obrázku do úvodného okna hry a taktiež vytvorenie tried(class) a vytvorenie grafického okna z tlačidlami">
+      <created>1595091356685</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595091356685</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

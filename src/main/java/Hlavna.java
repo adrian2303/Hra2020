@@ -9,10 +9,10 @@ public class Hlavna {
         ImageIcon obrazok;
         JLabel pozadieHry;
         JFrame okno = new JFrame("RPG hra");
-        okno.setPreferredSize(new Dimension(1000,750));
+        okno.setPreferredSize(new Dimension(1135,745));
         obrazok = new ImageIcon(Hlavna.class.getResource("/pozadieObrazok.jpg"));
         pozadieHry = new JLabel(obrazok);
-        pozadieHry.setSize(1000,750);
+        pozadieHry.setSize(1135,745);
         okno.setDefaultCloseOperation(okno.EXIT_ON_CLOSE);
         okno.add(pozadieHry);
         okno.setResizable(false);
@@ -24,13 +24,13 @@ public class Hlavna {
         JButton lukostrelecTlac;
 
         pozadieHry.add(bojovnikTlac = new JButton("Bojovník"));
-        bojovnikTlac.setBounds(450,320,100,50);
+        bojovnikTlac.setBounds(470,250,100,50);
 
         pozadieHry.add(kuzelnikTlac = new JButton("Kúzelník"));
-        kuzelnikTlac.setBounds(450,400,100,50);
+        kuzelnikTlac.setBounds(470,330,100,50);
 
         pozadieHry.add(lukostrelecTlac = new JButton("Lukostrelec"));
-        lukostrelecTlac.setBounds(450,480,100,50);
+        lukostrelecTlac.setBounds(470,410,100,50);
 
         //pridanie akcií tlačidlu, ktorá sa má vykonať po stlačení tlačidla start (implmentované použitím anonymnej triedy)
         bojovnikTlac.addActionListener(new ActionListener() {
@@ -41,7 +41,21 @@ public class Hlavna {
                 // nová inštanicia triedy HernyPanel čím sa zavolá aj jej konštruktor.
                 // V tomto novovytvorenom okne sa nám zobrazí hra, ktorá je od tejto chvíle plne hrateľná
                 if (e.getSource() == bojovnikTlac) {
+
                     Hrac war = new Bojovnik("Jano");
+
+                    ImageIcon MenuBojovnikaObr;
+                    JLabel pozadieMenu;
+                    JFrame menuOkno = new JFrame("Hlavné menu postavy Bojovník");
+                    menuOkno.setPreferredSize(new Dimension(1135,745));
+                    MenuBojovnikaObr = new ImageIcon(Hlavna.class.getResource("/MenuBojovnikaPozadie.jpg"));
+                    pozadieMenu = new JLabel(MenuBojovnikaObr);
+                    pozadieMenu.setSize(1135,745);
+                    menuOkno.setDefaultCloseOperation(okno.EXIT_ON_CLOSE);
+                    menuOkno.add(pozadieMenu);
+                    menuOkno.setResizable(false);
+                    menuOkno.pack();
+                    menuOkno.setVisible(true);
                 }
             }});
 
@@ -56,7 +70,21 @@ public class Hlavna {
                 // nová inštanicia triedy HernyPanel čím sa zavolá aj jej konštruktor.
                 // V tomto novovytvorenom okne sa nám zobrazí hra, ktorá je od tejto chvíle plne hrateľná
                 if (e.getSource() == kuzelnikTlac) {
+
                     Hrac mag = new Kuzelnik("Ďuro");
+
+                    ImageIcon MenuKuzelnikaObr;
+                    JLabel pozadieMenu;
+                    JFrame menuOkno = new JFrame("Hlavné menu postavy Kúzelník");
+                    menuOkno.setPreferredSize(new Dimension(1135,745));
+                    MenuKuzelnikaObr = new ImageIcon(Hlavna.class.getResource("/MenuBojovnikaPozadie.jpg"));
+                    pozadieMenu = new JLabel(MenuKuzelnikaObr);
+                    pozadieMenu.setSize(1135,745);
+                    menuOkno.setDefaultCloseOperation(okno.EXIT_ON_CLOSE);
+                    menuOkno.add(pozadieMenu);
+                    menuOkno.setResizable(false);
+                    menuOkno.pack();
+                    menuOkno.setVisible(true);
                 }
 
             }});
@@ -71,7 +99,21 @@ public class Hlavna {
                 // nová inštanicia triedy HernyPanel čím sa zavolá aj jej konštruktor.
                 // V tomto novovytvorenom okne sa nám zobrazí hra, ktorá je od tejto chvíle plne hrateľná
                 if (e.getSource() == lukostrelecTlac) {
+
                     Hrac luk = new Lukostrelec("Fero");
+
+                    ImageIcon MenuLukostrelcaObr;
+                    JLabel pozadieMenu;
+                    JFrame menuOkno = new JFrame("Hlavné menu postavy Lukostrelec");
+                    menuOkno.setPreferredSize(new Dimension(1135,745));
+                    MenuLukostrelcaObr = new ImageIcon(Hlavna.class.getResource("/MenuBojovnikaPozadie.jpg"));
+                    pozadieMenu = new JLabel(MenuLukostrelcaObr);
+                    pozadieMenu.setSize(1135,745);
+                    menuOkno.setDefaultCloseOperation(okno.EXIT_ON_CLOSE);
+                    menuOkno.add(pozadieMenu);
+                    menuOkno.setResizable(false);
+                    menuOkno.pack();
+                    menuOkno.setVisible(true);
                 }
 
             }});
