@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="373dbc31-96af-49ed-8da2-39708fbda8e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/MenuBojovnikaPozadie.jpg" afterDir="false" />
+    <list default="true" id="373dbc31-96af-49ed-8da2-39708fbda8e9" name="Default Changelist" comment="pridanie obrázku do úvodného okna hry a taktiež vytvorenie tried(class) a vytvorenie grafického okna z tlačidlami">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bojovnik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bojovnik.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hlavna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hlavna.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kuzelnik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kuzelnik.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lukostrelec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lukostrelec.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +36,7 @@
   </component>
   <component name="ProjectId" id="1eoO4TrrrM8NVYP5hrpNopy6duL" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/tankyaim" />
