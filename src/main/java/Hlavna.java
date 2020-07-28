@@ -68,8 +68,8 @@ public class Hlavna {
                         @Override
                         public void actionPerformed(ActionEvent e) {
                             if (e.getSource() == bojovnikVsMagTlac){
-                                  Bojovnik warior = new Bojovnik("Jano");
-                                  warior.bojSKuzelnikom();
+                                  Bojovnik war = new Bojovnik("Jano");
+                                  war.bojSKuzelnikom();
                             }
 
                         }
@@ -80,8 +80,8 @@ public class Hlavna {
                         @Override
                         public void actionPerformed(ActionEvent e) {
                             if(e.getSource() == bojovnikVsLukTlac){
-                                Bojovnik warior = new Bojovnik("Jano");
-                                warior.bojSLukostrelcom();
+                                Bojovnik war = new Bojovnik("Jano");
+                                war.bojSLukostrelcom();
                             }
                         }
                     });

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="373dbc31-96af-49ed-8da2-39708fbda8e9" name="Default Changelist" comment="pridanie obrázku do úvodného okna hry a taktiež vytvorenie tried(class) a vytvorenie grafického okna z tlačidlami">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="373dbc31-96af-49ed-8da2-39708fbda8e9" name="Default Changelist" comment="pridal om nové možnosti útoku už to nie su pevne nastvené hodnoty ale náhodné čísla v určenom rozsahu na obrazovku som pridal aj výpis aktuálne vygnerovaného útoku (poskodenia)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Bojovnik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bojovnik.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hlavna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hlavna.java" afterDir="false" />
@@ -105,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595091356685</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Popridával som možnosť útočenia medzí hráčmi navzájom a taktiež som vytvoril menu pre každého hráča s tlačidlami na útočenie na ostatných hráčov">
+      <created>1595874661565</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595874661565</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +133,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Upravenie suboru pom.xml a pridanie Hlavnej triedy" />
     <MESSAGE value="pridanie obrázku do úvodného okna hry a taktiež vytvorenie tried(class) a vytvorenie grafického okna z tlačidlami" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridanie obrázku do úvodného okna hry a taktiež vytvorenie tried(class) a vytvorenie grafického okna z tlačidlami" />
+    <MESSAGE value="Popridával som možnosť útočenia medzí hráčmi navzájom a taktiež som vytvoril menu pre každého hráča s tlačidlami na útočenie na ostatných hráčov" />
+    <option name="LAST_COMMIT_MESSAGE" value="Popridával som možnosť útočenia medzí hráčmi navzájom a taktiež som vytvoril menu pre každého hráča s tlačidlami na útočenie na ostatných hráčov" />
   </component>
 </project>
