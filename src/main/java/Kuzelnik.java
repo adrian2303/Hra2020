@@ -25,11 +25,13 @@ public class Kuzelnik extends Hrac {
 
             if(war.zivot <= 0){
                 System.out.println("Život kúzelníka: " +mag.zivot +" "+"Úder: "+mag.poskodenie+" "+"Život bojovníka: " + war.zivot);
+                System.out.println("Vyhral si! Kúzelník vyhral!");
                 break;
             }
 
             mag.zivot = mag.zivot - war.poskodenie;
             System.out.println("Život kúzelníka: " +mag.zivot +" "+"Úder: "+mag.poskodenie+" "+"Život bojovníka: " + war.zivot+" "+"Úder: "+war.poskodenie);
+            if(mag.zivot <= 0){ System.out.println("Prehral si! Vyhral bojovník!"); }
         }
     }
 
@@ -47,11 +49,13 @@ public class Kuzelnik extends Hrac {
 
             if(luk.zivot <= 0){
                 System.out.println("Život kúzelníka: " +mag.zivot +" "+"Úder: "+mag.poskodenie+" "+"Život lukostrelca: " + luk.zivot);
+                System.out.println("Vyhral si! Kúzelník vyhral!");
                 break;
             }
 
             mag.zivot = mag.zivot - luk.poskodenie;
             System.out.println("Život kúzelníka: " +mag.zivot +" "+"Úder: "+mag.poskodenie+" "+"Život lukostrelca: " + luk.zivot+" "+"Úder: "+luk.poskodenie);
+            if(mag.zivot <= 0){ System.out.println("Prehral si! Lukostrelec vyhral!"); }
         }
     }
 }

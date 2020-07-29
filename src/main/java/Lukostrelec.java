@@ -25,11 +25,13 @@ public class Lukostrelec extends Hrac {
 
             if(mag.zivot <= 0){
                 System.out.println("Život lukostrelca: " +luk.zivot +" "+"Úder: "+luk.poskodenie+" "+"Život kúzelnika: " + mag.zivot);
+                System.out.println("Vyhral si! Lukostrelec vyhral!");
                 break;
             }
 
             luk.zivot = luk.zivot - mag.poskodenie;
             System.out.println("Život lukostrelca: " +luk.zivot +" "+"Úder: "+luk.poskodenie+" "+"Život kúzelnika: " + mag.zivot+" "+"Úder: "+mag.poskodenie);
+            if(luk.zivot <= 0) {System.out.println("Prehral si! Kúzelník vyhral!");}
         }
     }
 
@@ -47,11 +49,13 @@ public class Lukostrelec extends Hrac {
 
             if(war.zivot <= 0){
                 System.out.println("Život lukostrelca: " +luk.zivot +" "+"Úder: "+luk.poskodenie+" "+"Život bojovníka: " + war.zivot);
+                System.out.println("Vyhral si! Lukostrelec vyhral!");
                 break;
             }
 
             luk.zivot = luk.zivot - war.poskodenie;
             System.out.println("Život lukostrelca: " +luk.zivot +" "+"Úder: "+luk.poskodenie+" "+"Život bojovníka: " + war.zivot+" "+"Úder: "+war.poskodenie);
+            if(luk.zivot <= 0){ System.out.println("Prehral si! Bojovník vyhral!"); }
         }
     }
 }

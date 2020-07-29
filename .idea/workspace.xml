@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="373dbc31-96af-49ed-8da2-39708fbda8e9" name="Default Changelist" comment="pridal om nové možnosti útoku už to nie su pevne nastvené hodnoty ale náhodné čísla v určenom rozsahu na obrazovku som pridal aj výpis aktuálne vygnerovaného útoku (poskodenia)">
+    <list default="true" id="373dbc31-96af-49ed-8da2-39708fbda8e9" name="Default Changelist" comment="pridal som výpis kto vyhral a kto prehral pre každého hráča">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Bojovnik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bojovnik.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hlavna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hlavna.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kuzelnik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kuzelnik.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lukostrelec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lukostrelec.java" afterDir="false" />
     </list>
@@ -111,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595874661565</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="pridal som nové možnosti útoku už to nie sú pevne nastavené hodnoty ale náhodné čísla v určenom rozsahu na obrazovku som pridal aj výpis aktuálne vygnerovaného útoku (poškodenia)">
+      <created>1595960277931</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595960277931</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +140,8 @@
     <MESSAGE value="Upravenie suboru pom.xml a pridanie Hlavnej triedy" />
     <MESSAGE value="pridanie obrázku do úvodného okna hry a taktiež vytvorenie tried(class) a vytvorenie grafického okna z tlačidlami" />
     <MESSAGE value="Popridával som možnosť útočenia medzí hráčmi navzájom a taktiež som vytvoril menu pre každého hráča s tlačidlami na útočenie na ostatných hráčov" />
-    <option name="LAST_COMMIT_MESSAGE" value="Popridával som možnosť útočenia medzí hráčmi navzájom a taktiež som vytvoril menu pre každého hráča s tlačidlami na útočenie na ostatných hráčov" />
+    <MESSAGE value="pridal som nové možnosti útoku už to nie sú pevne nastavené hodnoty ale náhodné čísla v určenom rozsahu na obrazovku som pridal aj výpis aktuálne vygnerovaného útoku (poškodenia)" />
+    <MESSAGE value="pridal som výpis kto vyhral a kto prehral pre každého hráča" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridal som výpis kto vyhral a kto prehral pre každého hráča" />
   </component>
 </project>
