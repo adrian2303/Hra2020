@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="373dbc31-96af-49ed-8da2-39708fbda8e9" name="Default Changelist" comment="pridal som výpis kto vyhral a kto prehral pre každého hráča">
+    <list default="true" id="373dbc31-96af-49ed-8da2-39708fbda8e9" name="Default Changelist" comment="pridal som tri nové textové súbory z ktorých sa načítava level hráča, taktiež som pridal aby sa podľa načítaného levelu zo súboru nastavil život hráča a rozsah úderu">
+      <change afterPath="$PROJECT_DIR$/levelBojovnik.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/levelKuzelnik.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/levelLukostrelec.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Bojovnik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bojovnik.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hlavna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hlavna.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hrac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hrac.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kuzelnik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kuzelnik.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lukostrelec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lukostrelec.java" afterDir="false" />
     </list>
@@ -45,6 +50,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Logs\Hra2020" />
+      <recent name="C:\Logs\Hra2020\src\main\java" />
       <recent name="D:\Program Files (x86)\Git\app\Hra2020\src\main\resources" />
     </key>
   </component>
@@ -117,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595960277931</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="pridal som výpis kto vyhral a kto prehral pre každého hráča">
+      <created>1596046546702</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1596046546702</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +156,7 @@
     <MESSAGE value="Popridával som možnosť útočenia medzí hráčmi navzájom a taktiež som vytvoril menu pre každého hráča s tlačidlami na útočenie na ostatných hráčov" />
     <MESSAGE value="pridal som nové možnosti útoku už to nie sú pevne nastavené hodnoty ale náhodné čísla v určenom rozsahu na obrazovku som pridal aj výpis aktuálne vygnerovaného útoku (poškodenia)" />
     <MESSAGE value="pridal som výpis kto vyhral a kto prehral pre každého hráča" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridal som výpis kto vyhral a kto prehral pre každého hráča" />
+    <MESSAGE value="pridal som tri nové textové súbory z ktorých sa načítava level hráča, taktiež som pridal aby sa podľa načítaného levelu zo súboru nastavil život hráča a rozsah úderu" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridal som tri nové textové súbory z ktorých sa načítava level hráča, taktiež som pridal aby sa podľa načítaného levelu zo súboru nastavil život hráča a rozsah úderu" />
   </component>
 </project>

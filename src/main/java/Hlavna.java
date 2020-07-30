@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileNotFoundException;
 
 public class Hlavna {
     public static void main(String[] args) {
@@ -66,10 +67,19 @@ public class Hlavna {
 //pridanie akcií tlačidlu, ktorá sa má vykonať po stlačení tlačidla bojovnikVsMagTlac (implmentované použitím anonymnej triedy)
                     bojovnikVsMagTlac.addActionListener(new ActionListener() {
                         @Override
-                        public void actionPerformed(ActionEvent e) {
+                        public void actionPerformed(ActionEvent e)  {
                             if (e.getSource() == bojovnikVsMagTlac){
-                                  Bojovnik war = new Bojovnik("Jano");
-                                  war.bojSKuzelnikom();
+                                Bojovnik war = null;
+                                try {
+                                    war = new Bojovnik("Jano");
+                                } catch (FileNotFoundException ex) {
+                                    ex.printStackTrace();
+                                }
+                                try {
+                                    war.bojSKuzelnikom();
+                                } catch (FileNotFoundException ex) {
+                                    ex.printStackTrace();
+                                }
                             }
 
                         }
@@ -80,8 +90,17 @@ public class Hlavna {
                         @Override
                         public void actionPerformed(ActionEvent e) {
                             if(e.getSource() == bojovnikVsLukTlac){
-                                Bojovnik war = new Bojovnik("Jano");
-                                war.bojSLukostrelcom();
+                                Bojovnik war = null;
+                                try {
+                                    war = new Bojovnik("Jano");
+                                } catch (FileNotFoundException ex) {
+                                    ex.printStackTrace();
+                                }
+                                try {
+                                    war.bojSLukostrelcom();
+                                } catch (FileNotFoundException ex) {
+                                    ex.printStackTrace();
+                                }
                             }
                         }
                     });
@@ -125,8 +144,17 @@ public class Hlavna {
                         @Override
                         public void actionPerformed(ActionEvent e) {
                             if(e.getSource() == MagVsBojovnikTlac) {
-                                Kuzelnik mag = new Kuzelnik("Ďuro");
-                                mag.bojSBojovnikom();
+                                Kuzelnik mag = null;
+                                try {
+                                    mag = new Kuzelnik("Ďuro");
+                                } catch (FileNotFoundException ex) {
+                                    ex.printStackTrace();
+                                }
+                                try {
+                                    mag.bojSBojovnikom();
+                                } catch (FileNotFoundException ex) {
+                                    ex.printStackTrace();
+                                }
                             }
                         }
                     });
@@ -135,8 +163,17 @@ public class Hlavna {
                         @Override
                         public void actionPerformed(ActionEvent e) {
                             if(e.getSource() == MagVsLukTlac) {
-                                Kuzelnik mag = new Kuzelnik("Ďuro");
-                                mag.bojSLukostrelcom();
+                                Kuzelnik mag = null;
+                                try {
+                                    mag = new Kuzelnik("Ďuro");
+                                } catch (FileNotFoundException ex) {
+                                    ex.printStackTrace();
+                                }
+                                try {
+                                    mag.bojSLukostrelcom();
+                                } catch (FileNotFoundException ex) {
+                                    ex.printStackTrace();
+                                }
                             }
                         }
                     });
@@ -181,8 +218,17 @@ public class Hlavna {
                         @Override
                         public void actionPerformed(ActionEvent e) {
                             if(e.getSource() == LukVsMagTlac){
-                                Lukostrelec luk = new Lukostrelec("Miso");
-                                luk.bojSKuzelnikom();
+                                Lukostrelec luk = null;
+                                try {
+                                    luk = new Lukostrelec("Miso");
+                                } catch (FileNotFoundException ex) {
+                                    ex.printStackTrace();
+                                }
+                                try {
+                                    luk.bojSKuzelnikom();
+                                } catch (FileNotFoundException ex) {
+                                    ex.printStackTrace();
+                                }
                             }
 
                         }
@@ -192,8 +238,17 @@ public class Hlavna {
                         @Override
                         public void actionPerformed(ActionEvent e) {
                             if(e.getSource() == LukVsBojovnikTlac){
-                                Lukostrelec luk = new Lukostrelec("Peťo");
-                                luk.bojSBojovnikom();
+                                Lukostrelec luk = null;
+                                try {
+                                    luk = new Lukostrelec("Peťo");
+                                } catch (FileNotFoundException ex) {
+                                    ex.printStackTrace();
+                                }
+                                try {
+                                    luk.bojSBojovnikom();
+                                } catch (FileNotFoundException ex) {
+                                    ex.printStackTrace();
+                                }
                             }
                         }
                     });

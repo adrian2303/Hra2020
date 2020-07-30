@@ -1,25 +1,40 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class Bojovnik extends Hrac {
 
-    public Bojovnik(String meno) {
+    public Bojovnik(String meno) throws FileNotFoundException {
         this.meno = meno;
-        zivot = 1000;
+        File suborCisel = new File("levelBojovnik.txt");
+        Scanner s = new Scanner(suborCisel);
+        float level = s.nextFloat();
+
+        if(level >= 1.0 && level <= 1.9){
+            this.zivot = 1100;
+            this.posWar1 = 30;
+            this.posWar2 = 70;
+
+        }
         System.out.println("Vytvoril sa bojovník s menom "+this.meno);
         System.out.println("Život bojovníka je: " + this.zivot);
+        System.out.println("Úder bojovníka je od "+this.posWar1+" do "+this.posWar2);
+
     }
 
     public int getRandomNumber(int min, int max){
         return (int) ((Math.random() * (max - min)) + min);
     }
 
-    public void bojSKuzelnikom(){
+    public void bojSKuzelnikom() throws FileNotFoundException {
 
         Bojovnik war = new Bojovnik("Ferdo");
         Kuzelnik mag = new Kuzelnik("Jardo");
 
         while(war.zivot > 0 && mag.zivot > 0){
 
-            war.poskodenie = getRandomNumber(30,70);
-            mag.poskodenie = getRandomNumber(145,185);
+            war.poskodenie = getRandomNumber(posWar1,posWar2);
+            mag.poskodenie = getRandomNumber(mag.posMag1,mag.posMag2);
 
             mag.zivot = mag.zivot - war.poskodenie;
 
@@ -35,15 +50,15 @@ public class Bojovnik extends Hrac {
         }
     }
 
-    public void bojSLukostrelcom(){
+    public void bojSLukostrelcom() throws FileNotFoundException {
 
         Bojovnik war = new Bojovnik("Ferdo");
         Lukostrelec luk = new Lukostrelec("Lukas");
 
         while(war.zivot > 0 && luk.zivot > 0) {
 
-            war.poskodenie = getRandomNumber(30,70);
-            luk.poskodenie = getRandomNumber(65,105);
+            war.poskodenie = getRandomNumber(posWar1,posWar2);
+            luk.poskodenie = getRandomNumber(luk.posLuk1,luk.posLuk2);
 
             luk.zivot = luk.zivot - war.poskodenie;
 
