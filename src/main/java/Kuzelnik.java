@@ -10,11 +10,26 @@ public class Kuzelnik extends Hrac {
         Scanner s = new Scanner(suborCisel);
         float level = s.nextFloat();
 
-        if(level >= 1.0 && level <= 1.9){
+        if(level >= 1.0 && level <= 1.99){
             this.zivot = 350;
             this.posMag1 = 145;
             this.posMag2 = 185;
-
+        }else if(level >= 2.0 && level <=2.99){
+                this.zivot = 400;
+                this.posMag1 = 175;
+            this.posMag2 = 215;
+        }else if(level >= 3.0 && level <=3.99){
+            this.zivot = 450;
+            this.posMag1 = 205;
+            this.posMag2 = 245;
+        }else if(level >= 4.0 && level <=4.99){
+            this.zivot = 500;
+            this.posMag1 = 235;
+            this.posMag2 = 275;
+        }else if(level >= 5.0 && level <=9.99){
+            this.zivot = 550;
+            this.posMag1 = 265;
+            this.posMag2 = 305;
         }
         System.out.println("Vytvoril sa kúzelník s menom "+ this.meno);
         System.out.println("Život kúzelníka je "+ this.zivot);

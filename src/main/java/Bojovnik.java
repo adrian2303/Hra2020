@@ -10,11 +10,27 @@ public class Bojovnik extends Hrac {
         Scanner s = new Scanner(suborCisel);
         float level = s.nextFloat();
 
-        if(level >= 1.0 && level <= 1.9){
+        if(level >= 1.0 && level <= 1.99){
             this.zivot = 1100;
             this.posWar1 = 30;
             this.posWar2 = 70;
 
+        }else if(level >= 2.0 && level <= 2.99){
+            this.zivot = 1300;
+            this.posWar1 = 40;
+            this.posWar2 = 80;
+        }else if(level >= 3.0 && level <= 3.99){
+            this.zivot = 1500;
+            this.posWar1 = 50;
+            this.posWar2 = 90;
+        }else if(level >= 4.0 && level <= 4.99){
+            this.zivot = 1700;
+            this.posWar1 = 60;
+            this.posWar2 = 100;
+        }else if(level >= 5.0 && level <= 9.99){
+            this.zivot = 1900;
+            this.posWar1 = 70;
+            this.posWar2 = 110;
         }
         System.out.println("Vytvoril sa bojovník s menom "+this.meno);
         System.out.println("Život bojovníka je: " + this.zivot);

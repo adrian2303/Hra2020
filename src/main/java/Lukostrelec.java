@@ -10,11 +10,26 @@ public class Lukostrelec extends Hrac {
         Scanner s = new Scanner(suborCisel);
         float level = s.nextFloat();
 
-        if(level >= 1.0 && level <= 1.9){
+        if(level >= 1.0 && level <= 1.99){
             this.zivot = 650;
             this.posLuk1 = 65;
             this.posLuk2 = 105;
-
+        }else if(level >= 2.0 && level <= 2.99){
+            this.zivot = 750;
+            this.posLuk1 = 85;
+            this.posLuk2 = 125;
+        }else if(level >= 3.0 && level <= 3.99){
+            this.zivot = 850;
+            this.posLuk1 = 105;
+            this.posLuk2 = 145;
+        }else if(level >= 4.0 && level <= 4.99){
+            this.zivot = 950;
+            this.posLuk1 = 125;
+            this.posLuk2 = 165;
+        }else if(level >= 5.0 && level <= 9.99){
+            this.zivot = 1050;
+            this.posLuk1 = 145;
+            this.posLuk2 = 185;
         }
 
         System.out.println("Vytvoril sa lukostrelec s menom "+this.meno);
