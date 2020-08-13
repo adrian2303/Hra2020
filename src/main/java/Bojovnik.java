@@ -1,14 +1,15 @@
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.Scanner;
 
 public class Bojovnik extends Hrac {
+    private File suborCisel;
+    private Scanner vstupnaHodnota;
 
     public Bojovnik(String meno) throws FileNotFoundException {
         this.meno = meno;
-        File suborCisel = new File("levelBojovnik.txt");
-        Scanner s = new Scanner(suborCisel);
-        float level = s.nextFloat();
+        suborCisel = new File("levelBojovnik.txt");
+        vstupnaHodnota = new Scanner(suborCisel);
+        int level = vstupnaHodnota.nextInt();
 
         if(level >= 1.0 && level <= 1.99){
             this.zivot = 1100;
@@ -42,7 +43,7 @@ public class Bojovnik extends Hrac {
         return (int) ((Math.random() * (max - min)) + min);
     }
 
-    public void bojSKuzelnikom() throws FileNotFoundException {
+    public void bojSKuzelnikom() throws IOException {
 
         Bojovnik war = new Bojovnik("Ferdo");
         Kuzelnik mag = new Kuzelnik("Jardo");
@@ -57,6 +58,15 @@ public class Bojovnik extends Hrac {
             if(mag.zivot <= 0){
                 System.out.println("Život bojovnika: " +war.zivot +" "+"Úder: "+war.poskodenie+" "+"Život kúzelnika: " + mag.zivot);
                 System.out.println("Vyhral si! Bojovník vyhral!");
+                if(suborCisel.exists()){
+                    vstupnaHodnota = new Scanner(suborCisel);
+                    int level = vstupnaHodnota.nextInt();
+                    int novyLevel = level + 1;
+                    suborCisel.delete();
+                    Writer wr = new FileWriter("levelBojovnik.txt");
+                    wr.write(novyLevel +"");
+                    wr.close();
+                }
                 break;
             }
 
@@ -66,7 +76,7 @@ public class Bojovnik extends Hrac {
         }
     }
 
-    public void bojSLukostrelcom() throws FileNotFoundException {
+    public void bojSLukostrelcom() throws IOException {
 
         Bojovnik war = new Bojovnik("Ferdo");
         Lukostrelec luk = new Lukostrelec("Lukas");
@@ -81,6 +91,15 @@ public class Bojovnik extends Hrac {
             if(luk.zivot <= 0){
                 System.out.println("Život bojovnika: " + war.zivot + " "+"Úder: "+war.poskodenie+" "+ "Život lukostrelca: " + luk.zivot);
                 System.out.println("Vyhral si! Bojovník vyhral!");
+                if(suborCisel.exists()){
+                    vstupnaHodnota = new Scanner(suborCisel);
+                    int level = vstupnaHodnota.nextInt();
+                    int novyLevel = level + 1;
+                    suborCisel.delete();
+                    Writer wr = new FileWriter("levelBojovnik.txt");
+                    wr.write(novyLevel +"");
+                    wr.close();
+                }
                 break;
             }
 

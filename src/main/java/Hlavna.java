@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class Hlavna {
     public static void main(String[] args) {
@@ -79,6 +80,8 @@ public class Hlavna {
                                     war.bojSKuzelnikom();
                                 } catch (FileNotFoundException ex) {
                                     ex.printStackTrace();
+                                } catch (IOException ex) {
+                                    ex.printStackTrace();
                                 }
                             }
 
@@ -99,6 +102,8 @@ public class Hlavna {
                                 try {
                                     war.bojSLukostrelcom();
                                 } catch (FileNotFoundException ex) {
+                                    ex.printStackTrace();
+                                } catch (IOException ex) {
                                     ex.printStackTrace();
                                 }
                             }
@@ -154,6 +159,8 @@ public class Hlavna {
                                     mag.bojSBojovnikom();
                                 } catch (FileNotFoundException ex) {
                                     ex.printStackTrace();
+                                } catch (IOException ex) {
+                                    ex.printStackTrace();
                                 }
                             }
                         }
@@ -172,6 +179,8 @@ public class Hlavna {
                                 try {
                                     mag.bojSLukostrelcom();
                                 } catch (FileNotFoundException ex) {
+                                    ex.printStackTrace();
+                                } catch (IOException ex) {
                                     ex.printStackTrace();
                                 }
                             }
@@ -228,6 +237,8 @@ public class Hlavna {
                                     luk.bojSKuzelnikom();
                                 } catch (FileNotFoundException ex) {
                                     ex.printStackTrace();
+                                } catch (IOException ex) {
+                                    ex.printStackTrace();
                                 }
                             }
 
@@ -247,6 +258,8 @@ public class Hlavna {
                                 try {
                                     luk.bojSBojovnikom();
                                 } catch (FileNotFoundException ex) {
+                                    ex.printStackTrace();
+                                } catch (IOException ex) {
                                     ex.printStackTrace();
                                 }
                             }
