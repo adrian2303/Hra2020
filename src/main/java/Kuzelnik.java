@@ -11,28 +11,33 @@ public class Kuzelnik extends Hrac {
         vstupnaHodnota = new Scanner(suborCisel);
         int level = vstupnaHodnota.nextInt();
 
-        if(level >= 1.0 && level <= 1.99){
+        if(level >= 0 && level <= 99){
             this.zivot = 350;
             this.posMag1 = 145;
             this.posMag2 = 185;
-        }else if(level >= 2.0 && level <=2.99){
-                this.zivot = 400;
-                this.posMag1 = 175;
+            this.uroven = 1;
+        }else if(level >= 100 && level <= 299){
+            this.zivot = 400;
+            this.posMag1 = 175;
             this.posMag2 = 215;
-        }else if(level >= 3.0 && level <=3.99){
+            this.uroven = 2;
+        }else if(level >= 300 && level <= 599){
             this.zivot = 450;
             this.posMag1 = 205;
             this.posMag2 = 245;
-        }else if(level >= 4.0 && level <=4.99){
+            this.uroven = 3;
+        }else if(level >= 600 && level <= 999){
             this.zivot = 500;
             this.posMag1 = 235;
             this.posMag2 = 275;
-        }else if(level >= 5.0 && level <=9.99){
+            this.uroven = 4;
+        }else if(level >= 1000 && level <= 9999){
             this.zivot = 550;
             this.posMag1 = 265;
             this.posMag2 = 305;
+            this.uroven = 5;
         }
-        System.out.println("Vytvoril sa kúzelník s menom "+ this.meno);
+        System.out.println("Vytvoril sa kúzelník "+ this.meno+" úrovne "+this.uroven);
         System.out.println("Život kúzelníka je "+ this.zivot);
         System.out.println("Úder kúzelníka je od "+this.posMag1+" do "+this.posMag2);
     }
@@ -59,7 +64,7 @@ public class Kuzelnik extends Hrac {
                 if(suborCisel.exists()){
                     vstupnaHodnota = new Scanner(suborCisel);
                     int level = vstupnaHodnota.nextInt();
-                    int novyLevel = level + 1;
+                    int novyLevel = level + 10;
                     suborCisel.delete();
                     Writer wr = new FileWriter("levelKuzelnik.txt");
                     wr.write(novyLevel +"");
@@ -92,7 +97,7 @@ public class Kuzelnik extends Hrac {
                 if(suborCisel.exists()){
                     vstupnaHodnota = new Scanner(suborCisel);
                     int level = vstupnaHodnota.nextInt();
-                    int novyLevel = level + 1;
+                    int novyLevel = level + 10;
                     suborCisel.delete();
                     Writer wr = new FileWriter("levelKuzelnik.txt");
                     wr.write(novyLevel +"");

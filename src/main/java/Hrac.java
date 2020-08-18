@@ -10,5 +10,6 @@ public class Hrac {
     public int posMag2;
     public int posLuk1;
     public int posLuk2;
+    public int uroven;
 
 }

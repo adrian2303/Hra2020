@@ -11,29 +11,34 @@ public class Lukostrelec extends Hrac {
         vstupnaHodnota = new Scanner(suborCisel);
         int level = vstupnaHodnota.nextInt();
 
-        if(level >= 1.0 && level <= 1.99){
+        if(level >= 0 && level <= 99){
             this.zivot = 650;
             this.posLuk1 = 65;
             this.posLuk2 = 105;
-        }else if(level >= 2.0 && level <= 2.99){
+            this.uroven = 1;
+        }else if(level >= 100 && level <= 299){
             this.zivot = 750;
             this.posLuk1 = 85;
             this.posLuk2 = 125;
-        }else if(level >= 3.0 && level <= 3.99){
+            this.uroven = 2;
+        }else if(level >= 300 && level <= 599){
             this.zivot = 850;
             this.posLuk1 = 105;
             this.posLuk2 = 145;
-        }else if(level >= 4.0 && level <= 4.99){
+            this.uroven = 3;
+        }else if(level >= 600 && level <= 999){
             this.zivot = 950;
             this.posLuk1 = 125;
             this.posLuk2 = 165;
-        }else if(level >= 5.0 && level <= 9.99){
+            this.uroven = 4;
+        }else if(level >= 1000 && level <= 9999){
             this.zivot = 1050;
             this.posLuk1 = 145;
             this.posLuk2 = 185;
+            this.uroven = 5;
         }
 
-        System.out.println("Vytvoril sa lukostrelec s menom "+this.meno);
+        System.out.println("Vytvoril sa lukostrelec "+this.meno+" úrovne "+this.uroven);
         System.out.println("Život lukostrelca je: " + this.zivot);
         System.out.println("Úder lukostrelca je od "+this.posLuk1+" do "+this.posLuk2);
     }
@@ -60,7 +65,7 @@ public class Lukostrelec extends Hrac {
                 if(suborCisel.exists()){
                     vstupnaHodnota = new Scanner(suborCisel);
                     int level = vstupnaHodnota.nextInt();
-                    int novyLevel = level + 1;
+                    int novyLevel = level + 10;
                     suborCisel.delete();
                     Writer wr = new FileWriter("levelLukostrelec.txt");
                     wr.write(novyLevel +"");
@@ -93,7 +98,7 @@ public class Lukostrelec extends Hrac {
                 if(suborCisel.exists()){
                     vstupnaHodnota = new Scanner(suborCisel);
                     int level = vstupnaHodnota.nextInt();
-                    int novyLevel = level + 1;
+                    int novyLevel = level + 10;
                     suborCisel.delete();
                     Writer wr = new FileWriter("levelLukostrelec.txt");
                     wr.write(novyLevel +"");
