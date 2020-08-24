@@ -48,6 +48,7 @@ public class Hlavna {
                     JLabel pozadieMenu;
                     JButton bojovnikVsMagTlac;
                     JButton bojovnikVsLukTlac;
+                    JButton pralesBojovnik;
                     JFrame menuOkno = new JFrame("Hlavné menu postavy Bojovník");
                     menuOkno.setPreferredSize(new Dimension(1135,745));
                     MenuBojovnikaObr = new ImageIcon(Hlavna.class.getResource("/MenuBojovnikaPozadie.jpg"));
@@ -64,6 +65,9 @@ public class Hlavna {
 
                     pozadieMenu.add(bojovnikVsLukTlac = new JButton("Útok na lukostrelca"));
                     bojovnikVsLukTlac.setBounds(470,410,200,50);
+
+                    pozadieMenu.add(pralesBojovnik = new JButton("Záhadný prales"));
+                    pralesBojovnik.setBounds(470,490,200,50);
 
 //pridanie akcií tlačidlu, ktorá sa má vykonať po stlačení tlačidla bojovnikVsMagTlac (implmentované použitím anonymnej triedy)
                     bojovnikVsMagTlac.addActionListener(new ActionListener() {
@@ -110,8 +114,24 @@ public class Hlavna {
                         }
                     });
 
+//pridanie akcií tlačidlu, ktorá sa má vykonať po stlačení tlačidla bojovnikVsMagTlac (implmentované použitím anonymnej triedy)
+                  pralesBojovnik.addActionListener(new ActionListener() {
+                      @Override
+                      public void actionPerformed(ActionEvent e) {
+                          if(e.getSource() == pralesBojovnik) {
+                              JFrame pralesBojovnikOkno = new JFrame("Bojovníkov Záhadný prales");
+                              pralesBojovnikOkno.setPreferredSize(new Dimension(1135, 745));
+                              pralesBojovnikOkno.setDefaultCloseOperation(okno.EXIT_ON_CLOSE);
+                              pralesBojovnikOkno.setResizable(false);
+                              pralesBojovnikOkno.pack();
+                              pralesBojovnikOkno.setVisible(true);
+                          }
+                      }
+                  });
+
                 }
             }});
+
 
 //pridanie akcií tlačidlu, ktorá sa má vykonať po stlačení tlačidla kuzelnikTlac (implmentované použitím anonymnej triedy)
         kuzelnikTlac.addActionListener(new ActionListener() {
@@ -128,6 +148,7 @@ public class Hlavna {
                     JLabel pozadieMenu;
                     JButton MagVsBojovnikTlac;
                     JButton MagVsLukTlac;
+                    JButton pralesKuzelnik;
                     JFrame menuOkno = new JFrame("Hlavné menu postavy Kúzelník");
                     menuOkno.setPreferredSize(new Dimension(1135,745));
                     MenuKuzelnikaObr = new ImageIcon(Hlavna.class.getResource("/MenuBojovnikaPozadie.jpg"));
@@ -143,6 +164,8 @@ public class Hlavna {
                     MagVsBojovnikTlac.setBounds(470,330,200,50);
                     pozadieMenu.add(MagVsLukTlac = new JButton("Útok na lukostrelca"));
                     MagVsLukTlac.setBounds(470,410,200,50);
+                    pozadieMenu.add(pralesKuzelnik = new JButton("Záhadný prales"));
+                    pralesKuzelnik.setBounds(470,490, 200,50);
 
                     //pridanie akcií tlačidlu, ktorá sa má vykonať po stlačení tlačidla bojovnikVsMagTlac (implmentované použitím anonymnej triedy)
                     MagVsBojovnikTlac.addActionListener(new ActionListener() {
@@ -186,6 +209,20 @@ public class Hlavna {
                             }
                         }
                     });
+                    //pridanie akcií tlačidlu, ktorá sa má vykonať po stlačení tlačidla lukostrelecTlac (implmentované použitím anonymnej triedy)
+                    pralesKuzelnik.addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                              if(e.getSource() == pralesKuzelnik){
+                                  JFrame pralesBojovnikOkno = new JFrame("Kúzelnikov Záhadný prales");
+                                  pralesBojovnikOkno.setPreferredSize(new Dimension(1135, 745));
+                                  pralesBojovnikOkno.setDefaultCloseOperation(okno.EXIT_ON_CLOSE);
+                                  pralesBojovnikOkno.setResizable(false);
+                                  pralesBojovnikOkno.pack();
+                                  pralesBojovnikOkno.setVisible(true);
+                              }
+                        }
+                    });
                 }
 
             }});
@@ -206,6 +243,7 @@ public class Hlavna {
                     JLabel pozadieMenu;
                     JButton LukVsMagTlac;
                     JButton LukVsBojovnikTlac;
+                    JButton pralesLukostrelec;
                     JFrame menuOkno = new JFrame("Hlavné menu postavy Lukostrelec");
                     menuOkno.setPreferredSize(new Dimension(1135,745));
                     MenuLukostrelcaObr = new ImageIcon(Hlavna.class.getResource("/MenuBojovnikaPozadie.jpg"));
@@ -221,6 +259,8 @@ public class Hlavna {
                     LukVsMagTlac.setBounds(470,330,200,50);
                     pozadieMenu.add(LukVsBojovnikTlac = new JButton("Útok na bojovníka"));
                     LukVsBojovnikTlac.setBounds(470,410,200,50);
+                    pozadieMenu.add(pralesLukostrelec = new JButton("Záhadný prales"));
+                    pralesLukostrelec.setBounds(470,490,200,50);
 
                     //pridanie akcií tlačidlu, ktorá sa má vykonať po stlačení tlačidla LukVsMagTlac (implmentované použitím anonymnej triedy)
                     LukVsMagTlac.addActionListener(new ActionListener() {
@@ -262,6 +302,20 @@ public class Hlavna {
                                 } catch (IOException ex) {
                                     ex.printStackTrace();
                                 }
+                            }
+                        }
+                    });
+                    //pridanie akcií tlačidlu, ktorá sa má vykonať po stlačení tlačidla pralesLukostrelec (implmentované použitím anonymnej triedy)
+                    pralesLukostrelec.addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            if(e.getSource() == pralesLukostrelec){
+                                JFrame pralesBojovnikOkno = new JFrame("Lukostrelcov Záhadný prales");
+                                pralesBojovnikOkno.setPreferredSize(new Dimension(1135, 745));
+                                pralesBojovnikOkno.setDefaultCloseOperation(okno.EXIT_ON_CLOSE);
+                                pralesBojovnikOkno.setResizable(false);
+                                pralesBojovnikOkno.pack();
+                                pralesBojovnikOkno.setVisible(true);
                             }
                         }
                     });
