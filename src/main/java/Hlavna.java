@@ -119,12 +119,23 @@ public class Hlavna {
                       @Override
                       public void actionPerformed(ActionEvent e) {
                           if(e.getSource() == pralesBojovnik) {
+                              ImageIcon BojovnikObrPrales;
+                              JLabel pozadiePrales;
+                              JButton BojovnikVsNepriatel;
                               JFrame pralesBojovnikOkno = new JFrame("Bojovníkov Záhadný prales");
                               pralesBojovnikOkno.setPreferredSize(new Dimension(1135, 745));
+                              BojovnikObrPrales = new ImageIcon(Hlavna.class.getResource("/PozadieZahadnyPrales.jpg"));
+                              pozadiePrales = new JLabel(BojovnikObrPrales);
+                              pozadiePrales.setSize(1135,745);
                               pralesBojovnikOkno.setDefaultCloseOperation(okno.EXIT_ON_CLOSE);
+                              pralesBojovnikOkno.add(pozadiePrales);
                               pralesBojovnikOkno.setResizable(false);
                               pralesBojovnikOkno.pack();
                               pralesBojovnikOkno.setVisible(true);
+
+//                            pridanie tlačidla na útok na nepriateľa do okna a nastavenie jeho umiestnenia
+                              pozadiePrales.add(BojovnikVsNepriatel = new JButton("Útok na nepriateľa"));
+                              BojovnikVsNepriatel.setBounds(470,350,200,50);
                           }
                       }
                   });
@@ -214,12 +225,23 @@ public class Hlavna {
                         @Override
                         public void actionPerformed(ActionEvent e) {
                               if(e.getSource() == pralesKuzelnik){
+                                  ImageIcon KuzelnikObrPrales;
+                                  JLabel pozadiePrales;
+                                  JButton KuzelnikVsNepriatel;
                                   JFrame pralesBojovnikOkno = new JFrame("Kúzelnikov Záhadný prales");
                                   pralesBojovnikOkno.setPreferredSize(new Dimension(1135, 745));
+                                  KuzelnikObrPrales = new ImageIcon(Hlavna.class.getResource("/PozadieZahadnyPrales.jpg"));
+                                  pozadiePrales = new JLabel(KuzelnikObrPrales);
+                                  pozadiePrales.setSize(1135,745);
                                   pralesBojovnikOkno.setDefaultCloseOperation(okno.EXIT_ON_CLOSE);
+                                  pralesBojovnikOkno.add(pozadiePrales);
                                   pralesBojovnikOkno.setResizable(false);
                                   pralesBojovnikOkno.pack();
                                   pralesBojovnikOkno.setVisible(true);
+
+                                  // pridanie tlačidla na útok na nepriateľa do okna a nastavenie jeho umiestnenia
+                                  pozadiePrales.add(KuzelnikVsNepriatel = new JButton("Útok na nepriateľa"));
+                                  KuzelnikVsNepriatel.setBounds(470,350,200,50);
                               }
                         }
                     });
@@ -310,12 +332,23 @@ public class Hlavna {
                         @Override
                         public void actionPerformed(ActionEvent e) {
                             if(e.getSource() == pralesLukostrelec){
+                                ImageIcon LukostrelecObrPrales;
+                                JLabel pozadiePrales;
+                                JButton LukostrelecVsNepriatel;
                                 JFrame pralesBojovnikOkno = new JFrame("Lukostrelcov Záhadný prales");
                                 pralesBojovnikOkno.setPreferredSize(new Dimension(1135, 745));
+                                LukostrelecObrPrales = new ImageIcon(Hlavna.class.getResource("/PozadieZahadnyPrales.jpg"));
+                                pozadiePrales = new JLabel(LukostrelecObrPrales);
+                                pozadiePrales.setSize(1135,745);
                                 pralesBojovnikOkno.setDefaultCloseOperation(okno.EXIT_ON_CLOSE);
+                                pralesBojovnikOkno.add(pozadiePrales);
                                 pralesBojovnikOkno.setResizable(false);
                                 pralesBojovnikOkno.pack();
                                 pralesBojovnikOkno.setVisible(true);
+
+                                // pridanie tlačidla na útok na nepriateľa do okna a nastavenie jeho umiestnenia
+                                pozadiePrales.add(LukostrelecVsNepriatel = new JButton("Útok na nepriateľa"));
+                                LukostrelecVsNepriatel.setBounds(470,350,200,50);
                             }
                         }
                     });

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="373dbc31-96af-49ed-8da2-39708fbda8e9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/PozadieZahadnyPrales.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hlavna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hlavna.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pozadieObrazok.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pozadieObrazok.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +37,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/tankyaim" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -43,9 +45,13 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Logs\Hra2020\src\main\resources" />
       <recent name="C:\Logs\Hra2020" />
       <recent name="C:\Logs\Hra2020\src\main\java" />
       <recent name="D:\Program Files (x86)\Git\app\Hra2020\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Logs\Hra2020\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -152,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597775106897</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="pridal som nove tlačidlá do hry aj nové obrázky">
+      <created>1598293811262</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1598293811262</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +194,7 @@
     <MESSAGE value="pridal som nastavenie zivota, a veľkosti úderov bojovníka, kúzelníka a lukostrelca podľa toho aké číslo sa načítalo zo súboru, ktorý patrí ku konkrétnemu hráčovi" />
     <MESSAGE value="pridal som zvyšovanie levelu hráča po výhre nad iným hráčom, je to implementované pomocou načítavnia a zapisovania do súboru" />
     <MESSAGE value="zmenil som požiadavky na dosiahnutie vyššej úrovne hráča a pridal som zobrazovanie úrovne hráča" />
-    <option name="LAST_COMMIT_MESSAGE" value="zmenil som požiadavky na dosiahnutie vyššej úrovne hráča a pridal som zobrazovanie úrovne hráča" />
+    <MESSAGE value="pridal som nove tlačidlá do hry aj nové obrázky" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridal som nove tlačidlá do hry aj nové obrázky" />
   </component>
 </project>
