@@ -225,6 +225,7 @@ public class Hlavna {
                         @Override
                         public void actionPerformed(ActionEvent e) {
                               if(e.getSource() == pralesKuzelnik){
+
                                   ImageIcon KuzelnikObrPrales;
                                   JLabel pozadiePrales;
                                   JButton KuzelnikVsNepriatel;
@@ -242,6 +243,25 @@ public class Hlavna {
                                   // pridanie tlačidla na útok na nepriateľa do okna a nastavenie jeho umiestnenia
                                   pozadiePrales.add(KuzelnikVsNepriatel = new JButton("Útok na nepriateľa"));
                                   KuzelnikVsNepriatel.setBounds(470,350,200,50);
+                                  //pridanie akcií tlačidlu, ktorá sa má vykonať po stlačení tlačidla KuzelnikVsNepriatel (implmentované použitím anonymnej triedy)
+                                  KuzelnikVsNepriatel.addActionListener(new ActionListener() {
+                                      @Override
+                                      public void actionPerformed(ActionEvent e) {
+                                          if ((e.getSource() == KuzelnikVsNepriatel)){
+                                              Nepriatel nepriatel = null;
+                                              try {
+                                                  nepriatel = new Nepriatel("Ferdo",1);
+                                              } catch (FileNotFoundException ex) {
+                                                  ex.printStackTrace();
+                                              }
+                                              try {
+                                                  nepriatel.bojSKuzelnikom();
+                                              } catch (IOException ex) {
+                                                  ex.printStackTrace();
+                                              }
+                                          }
+                                      }
+                                  });
                               }
                         }
                     });
