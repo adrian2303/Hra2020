@@ -136,6 +136,26 @@ public class Hlavna {
 //                            pridanie tlačidla na útok na nepriateľa do okna a nastavenie jeho umiestnenia
                               pozadiePrales.add(BojovnikVsNepriatel = new JButton("Útok na nepriateľa"));
                               BojovnikVsNepriatel.setBounds(470,350,200,50);
+
+                              //pridanie akcií tlačidlu, ktorá sa má vykonať po stlačení tlačidla BojovníkVsNepriatel (implmentované použitím anonymnej triedy)
+                              BojovnikVsNepriatel.addActionListener(new ActionListener() {
+                                  @Override
+                                  public void actionPerformed(ActionEvent e) {
+                                      if(e.getSource() == BojovnikVsNepriatel){
+                                          Nepriatel nepriatel = null;
+                                          try {
+                                              nepriatel = new Nepriatel("Ferdo",2);
+                                          } catch (FileNotFoundException ex) {
+                                              ex.printStackTrace();
+                                          }
+                                          try {
+                                              nepriatel.bojSBojovnikom();
+                                          } catch (IOException ex) {
+                                              ex.printStackTrace();
+                                          }
+                                      }
+                                  }
+                              });
                           }
                       }
                   });
@@ -243,6 +263,7 @@ public class Hlavna {
                                   // pridanie tlačidla na útok na nepriateľa do okna a nastavenie jeho umiestnenia
                                   pozadiePrales.add(KuzelnikVsNepriatel = new JButton("Útok na nepriateľa"));
                                   KuzelnikVsNepriatel.setBounds(470,350,200,50);
+
                                   //pridanie akcií tlačidlu, ktorá sa má vykonať po stlačení tlačidla KuzelnikVsNepriatel (implmentované použitím anonymnej triedy)
                                   KuzelnikVsNepriatel.addActionListener(new ActionListener() {
                                       @Override
@@ -369,6 +390,26 @@ public class Hlavna {
                                 // pridanie tlačidla na útok na nepriateľa do okna a nastavenie jeho umiestnenia
                                 pozadiePrales.add(LukostrelecVsNepriatel = new JButton("Útok na nepriateľa"));
                                 LukostrelecVsNepriatel.setBounds(470,350,200,50);
+
+                                //pridanie akcií tlačidlu, ktorá sa má vykonať po stlačení tlačidla LukostrelecVsNepriatel (implmentované použitím anonymnej triedy)
+                                LukostrelecVsNepriatel.addActionListener(new ActionListener() {
+                                    @Override
+                                    public void actionPerformed(ActionEvent e) {
+                                        if(e.getSource() == LukostrelecVsNepriatel){
+                                            Nepriatel nepriatel = null;
+                                            try {
+                                                nepriatel = new Nepriatel("Ferdo",3);
+                                            } catch (FileNotFoundException ex) {
+                                                ex.printStackTrace();
+                                            }
+                                            try {
+                                                nepriatel.bojSLukostrelcom();
+                                            } catch (IOException ex) {
+                                                ex.printStackTrace();
+                                            }
+                                        }
+                                    }
+                                });
                             }
                         }
                     });

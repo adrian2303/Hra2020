@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="373dbc31-96af-49ed-8da2-39708fbda8e9" name="Default Changelist" comment="vytvoril som novú triedu(classu) nepritaeľ, ktorá predstavuje všetkých nepriateľov hráča a pridal som možnosť útočenia kuzelnikovi na nepriateľov. Taktiež som pridal nový súbor, ktroý slúži na to aby program vedel, ktorého nepriateľa má načítať">
-      <change afterPath="$PROJECT_DIR$/pralesKuzelnik.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Nepriatel.java" afterDir="false" />
+    <list default="true" id="373dbc31-96af-49ed-8da2-39708fbda8e9" name="Default Changelist" comment=" pridal som možnosť útočenia na nepriateľov bojovníkovi a lukostrelcovi. Taktiež som pridal nové súbory, ktoré slúžia na to aby program vedel, ktorého nepriateľa má načítať">
+      <change afterPath="$PROJECT_DIR$/pralesBojovnik.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pralesLukostrelec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/levelKuzelnik.txt" beforeDir="false" afterPath="$PROJECT_DIR$/levelKuzelnik.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levelBojovnik.txt" beforeDir="false" afterPath="$PROJECT_DIR$/levelBojovnik.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/levelLukostrelec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/levelLukostrelec.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hlavna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hlavna.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hrac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hrac.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Nepriatel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Nepriatel.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +74,7 @@
   <component name="RunManager">
     <configuration name="Hlavna" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hlavna" />
-      <module name="Hra2020" />
+      <module name="app" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,6 +99,7 @@
       <workItem from="1595088379516" duration="3348000" />
       <workItem from="1595593912060" duration="5881000" />
       <workItem from="1595697787697" duration="123000" />
+      <workItem from="1598804355669" duration="5272000" />
     </task>
     <task id="LOCAL-00001" summary="Upravenie suboru pom.xml a pridanie Hlavnej triedy">
       <created>1594986757011</created>
@@ -206,6 +210,7 @@
     <MESSAGE value="pridal som nove tlačidlá do hry aj nové obrázky" />
     <MESSAGE value="pridal som nové pozadie hlavného menu a taktiež som pridal obrázky do ďalších grafických okien aj tlačídlá som pridal zatial nefungujú" />
     <MESSAGE value="vytvoril som novú triedu(classu) nepritaeľ, ktorá predstavuje všetkých nepriateľov hráča a pridal som možnosť útočenia kuzelnikovi na nepriateľov. Taktiež som pridal nový súbor, ktroý slúži na to aby program vedel, ktorého nepriateľa má načítať" />
-    <option name="LAST_COMMIT_MESSAGE" value="vytvoril som novú triedu(classu) nepritaeľ, ktorá predstavuje všetkých nepriateľov hráča a pridal som možnosť útočenia kuzelnikovi na nepriateľov. Taktiež som pridal nový súbor, ktroý slúži na to aby program vedel, ktorého nepriateľa má načítať" />
+    <MESSAGE value=" pridal som možnosť útočenia na nepriateľov bojovníkovi a lukostrelcovi. Taktiež som pridal nové súbory, ktoré slúžia na to aby program vedel, ktorého nepriateľa má načítať" />
+    <option name="LAST_COMMIT_MESSAGE" value=" pridal som možnosť útočenia na nepriateľov bojovníkovi a lukostrelcovi. Taktiež som pridal nové súbory, ktoré slúžia na to aby program vedel, ktorého nepriateľa má načítať" />
   </component>
 </project>
